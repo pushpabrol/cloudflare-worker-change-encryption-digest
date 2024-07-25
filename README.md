@@ -59,7 +59,7 @@ An event listener is added to handle fetch events, directing them to the router 
 
 ## Usage
 
-Deploy this code as an Akamai EdgeWorker to handle requests, particularly for processing and forwarding SAML responses to Auth0.
+Deploy this code as an Cloudflare proxy over auth0 to handle requests, particularly for processing and forwarding SAML responses to Auth0.
 
 ### Example
 
