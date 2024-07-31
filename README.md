@@ -61,6 +61,11 @@ An event listener is added to handle fetch events, directing them to the router 
 
 Deploy this code as an Cloudflare proxy over auth0 to handle requests, particularly for processing and forwarding SAML responses to Auth0.
 
+### How to deploy?
+    - run `npx webpack`
+    - run `npx wrangler publish`
+    - Make sure the route is mapped to the worker in cloudflare
+
 ### Example
 
 To handle a POST request to `/login/callback`, the code will:

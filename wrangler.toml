@@ -1,10 +1,14 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "cloudflare-worker-change-encryption-digest"
-main = "index.js"
+name = "cloudflare-worker-decrypt-key-test"
+main = "./dist/bundle.js"
 compatibility_date = "2024-06-20"
+
+[build]
+command = "webpack"
 
 [vars]
 AUTH0_HOST_NAME = "pushp3-cd-....edge.tenants.auth0.com"
 CNAME_API_KEY = "edcf8a...b53577"
-ENCRYPTION = { PRIVATE_KEY = "-----BEGIN PRIVATE KEY-----\nMIIEv...fkONFuaGW6QkC5RGH\nomvztX2...7wCEyJ\n-----END PRIVATE KEY-----",PUBLIC_KEY = "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkq...wj0Bd8i11xkR3W\nHwIDAQAB\n-----END PUBLIC KEY-----" }
+ENCRYPTION2 = { PRIVATE_KEY = "-----BEGIN PRIVATE KEY-----\nMIIEv...fkONFuaGW6QkC5RGH\nomvztX2...7wCEyJ\n-----END PRIVATE KEY-----",PUBLIC_KEY = "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkq...wj0Bd8i11xkR3W\nHwIDAQAB\n-----END PUBLIC KEY-----" }
+
 
